@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+// require_once("wp_admin_panel/db.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,7 +78,7 @@
       <!-- BRAND -->
       <div class="brand">
         <div class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="images/logo.svg" alt="Hotel Hamlyn">
           </a>
         </div>
@@ -91,26 +96,26 @@
             <a href="#">HOME</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="rooms-list.html">ROOMS</a>
+            <a href="rooms-list.php">ROOMS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="restaurant.html">Our Restaurant</a>
+            <a href="restaurant.php">Our Restaurant</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="location.html">EXCURSIONS</a>
+            <a href="location.php">EXCURSIONS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="gallery.html">GALLERY</a>
+            <a href="gallery.php">GALLERY</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="about-us.html">ABOUT US</a>
+            <a href="about-us.php">ABOUT US</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
           </li>
 
           <li class="menu-item menu-btn">
-            <a href="booking-form.html" class="btn">
+            <a href="booking-form.php" class="btn">
               <i class="fa fa-calendar"></i>
               BOOK ONLINE</a>
           </li>
@@ -126,7 +131,7 @@
             <h1>Booking Form</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
               </li>
               <li>Booking Form</li>
             </ol>
@@ -504,7 +509,7 @@
                   </div>
                   <div class="offer-item sm mb50">
                     <figure class="gradient-overlay-hover link-icon">
-                      <a href="offer.html">
+                      <a href="offer.php">
                         <img src="images/offers/offer1.jpg" class="img-fluid" alt="Image">
                       </a>
                     </figure>
@@ -514,13 +519,13 @@
                       5 nights for Rs 4,500
                     </div>
                     <h3 class="offer-title">
-                      <a href="offer.html">All-Inclusive Honeymoon Package</a>
+                      <a href="offer.php">All-Inclusive Honeymoon Package</a>
                     </h3>
                   </div>
                   <!-- ITEM -->
                   <div class="offer-item sm mb50">
                     <figure class="gradient-overlay-hover link">
-                      <a href="offer.html">
+                      <a href="offer.php">
                         <img src="images/offers/offer2.jpg" class="img-fluid" alt="Image">
                       </a>
                     </figure>
@@ -530,13 +535,13 @@
                       8 nights for Rs 4,500
                     </div>
                     <h3 class="offer-title">
-                      <a href="offer.html">All-Inclusive Family Package</a>
+                      <a href="offer.php">All-Inclusive Family Package</a>
                     </h3>
                   </div>
                   <!-- ITEM -->
                   <div class="offer-item sm mb50">
                     <figure class="gradient-overlay-hover link">
-                      <a href="offer.html">
+                      <a href="offer.php">
                         <img src="images/offers/offer3.jpg" class="img-fluid" alt="Image">
                       </a>
                     </figure>
@@ -546,7 +551,7 @@
                       3 nights for Rs 4,500
                     </div>
                     <h3 class="offer-title">
-                      <a href="offer.html">Fly, Stay and Save Over 30%</a>
+                      <a href="offer.php">Fly, Stay and Save Over 30%</a>
                     </h3>
                   </div>
                 </div>
@@ -591,19 +596,19 @@
               <div class="inner">
                 <ul class="useful-links">
                   <li>
-                    <a href="about-us.html">About Us</a>
+                    <a href="about-us.php">About Us</a>
                   </li>
                   <li>
-                    <a href="contact.html">Rooms</a>
+                    <a href="contact.php">Rooms</a>
                   </li>
                   <li>
-                    <a href="shop.html">Attractions</a>
+                    <a href="shop.php">Attractions</a>
                   </li>
                   <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="gallery.php">Gallery</a>
                   </li>
                   <li>
-                    <a href="location.html">Our Location</a>
+                    <a href="location.php">Our Location</a>
                   </li>
                 </ul>
               </div>

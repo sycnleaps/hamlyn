@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+// require_once("wp_admin_panel/db.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,7 +78,7 @@
       <!-- BRAND -->
       <div class="brand">
         <div class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="images/logo.svg" alt="Hotel Hamlyn">
           </a>
         </div>
@@ -91,26 +96,26 @@
             <a href="#">HOME</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="rooms-list.html">ROOMS</a>
+            <a href="rooms-list.php">ROOMS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="restaurant.html">Our Restaurant</a>
+            <a href="restaurant.php">Our Restaurant</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="location.html">EXCURSIONS</a>
+            <a href="location.php">EXCURSIONS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="gallery.html">GALLERY</a>
+            <a href="gallery.php">GALLERY</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="about-us.html">ABOUT US</a>
+            <a href="about-us.php">ABOUT US</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
           </li>
 
           <li class="menu-item menu-btn">
-            <a href="booking-form.html" class="btn">
+            <a href="booking-form.php" class="btn">
               <i class="fa fa-calendar"></i>
               BOOK ONLINE</a>
           </li>
@@ -119,111 +124,143 @@
     </div>
   </header>
       <!-- ========== PAGE TITLE ========== -->
-      <div class="page-title gradient-overlay op6" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;
+      <div class="page-title gradient-overlay op5" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;
     background-size: cover;">
         <div class="container">
           <div class="inner">
-            <h1>CONTACT</h1>
+            <h1>SINGLE ROOM</h1>
+            <div class="room-details-price">
+              Rs. 5,000 / NIGHT
+            </div>
             <ol class="breadcrumb">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
               </li>
-              <li>Contact</li>
+              <li>Single Room</li>
             </ol>
           </div>
         </div>
       </div>
       <!-- ========== MAIN ========== -->
-      <main class="contact-page">
+      <main class="room">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
-              <div class="section-title">
-                <h4>CONTACT US</h4>
-                <p class="section-subtitle">Let’s Talk</p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sit, fugiat at in assumenda corrupti autem iste eveniet eaque vitae beatae tenetur, voluptatem eius. Numquam.</p>
-              <!-- CONTACT FORM -->
-              <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                  <input class="form-control" name="name" placeholder="Name" type="text">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" name="email" placeholder="Email" type="email">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" name="phone" placeholder="Phone" type="text">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" name="subject" placeholder="Subject" type="text">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" placeholder="Message"></textarea>
-                </div>
-                <div class="form-group">
-                  <button class="btn mt30">SEND YOUR MESSAGE</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-md-4">
-              <div class="sidebar">
-                <div class="google-map">
-                  <div class="toggle-streetview" id="openStreetView">
-                    <i class="fa fa-street-view" aria-hidden="true"></i>
+            <div class="col-lg-12 col-12">
+              <!-- ROOM SLIDER -->
+              <div class="room-slider">
+                <div id="room-main-image" class="owl-carousel image-gallery">
+                  <!-- ITEM -->
+                  <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                      <a href="images/rooms/single/single1.jpg">
+                        <img class="img-fluid" src="images/rooms/single/single1.jpg" alt="Image">
+                      </a>
+                    </figure>
                   </div>
-                  <div id="map-canvas"></div>
+                  <!-- ITEM -->
+                  <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                      <a href="images/rooms/single/single2.jpg">
+                        <img class="img-fluid" src="images/rooms/single/single2.jpg" alt="Image">
+                      </a>
+                    </figure>
+                  </div>
+                  <!-- ITEM -->
+                  <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                      <a href="images/rooms/single/single3.jpg">
+                        <img class="img-fluid" src="images/rooms/single/single3.jpg" alt="Image">
+                      </a>
+                    </figure>
+                  </div>
+                  <!-- ITEM -->
+                  <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                      <a href="images/rooms/single/single4.jpg">
+                        <img class="img-fluid" src="images/rooms/single/single4.jpg" alt="Image">
+                      </a>
+                    </figure>
+                  </div>
+                  <!-- ITEM -->
+                  <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                      <a href="images/rooms/single/single5.jpg">
+                        <img class="img-fluid" src="images/rooms/single/single5.jpg" alt="Image">
+                      </a>
+                    </figure>
+                  </div>
                 </div>
-                <div class="contact-details mt75">
-                  <div class="contact-info">
-                    <ul>
+                <div id="room-thumbs" class="room-thumbs owl-carousel">
+                  <!-- ITEM -->
+                  <div class="item"><img class="img-fluid" src="images/rooms/single/single1.jpg" alt="Image"></div>
+                  <!-- ITEM -->
+                  <div class="item"><img class="img-fluid" src="images/rooms/single/single2.jpg" alt="Image"></div>
+                  <!-- ITEM -->
+                  <div class="item"><img class="img-fluid" src="images/rooms/single/single3.jpg" alt="Image"></div>
+                  <!-- ITEM -->
+                  <div class="item"><img class="img-fluid" src="images/rooms/single/single4.jpg" alt="Image"></div>
+                  <!-- ITEM -->
+                  <div class="item"><img class="img-fluid" src="images/rooms/single/single5.jpg" alt="Image"></div>
+                </div>
+              </div>
+              <p class="dropcap">Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                nisl ut aliquip ex ea
+                <u>commodo consequat.</u>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut, asperiores voluptatibus quo rem iusto laborum, laudantium corrupti ea esse officia placeat beatae! Ducimus quasi nisi odio architecto repudiandae illo sunt nulla quia obcaecati
+                blanditiis? Doloremque commodi deserunt corporis, maiores, quam ipsam voluptates beatae necessitatibus, sapiente impedit sunt cupiditate odio, officiis quo debitis distinctio! Tenetur quibusdam modi adipisci vel ullam cum ratione itaque laborum
+                molestias nesciunt. Qui itaque saepe obcaecati quo tempora natus laudantium quidem, inventore totam. Nobis incidunt est doloribus qui vero expedita a fugit necessitatibus minus sapiente illo, commodi laudantium minima quo deserunt odio repellat
+                placeat quas, perferendis, voluptates! Omnis corporis nostrum optio reprehenderit aspernatur consequuntur, nisi rerum. Architecto provident alias voluptatem aliquam tenetur eius eos. Iure, earum. Asperiores consectetur, dolorem animi pariatur. Magni
+                necessitatibus non hic odit nesciunt voluptatum distinctio provident, repellendus quae dolores, assumenda delectus quisquam fuga velit natus cumque. Odio sint deserunt ex dolorem, culpa, sit accusantium nesciunt. Dicta, nulla aperiam expedita nihil
+                at laborum! Minima ducimus, nobis quasi minus totam ab quo, quia labore nihil praesentium doloremque recusandae! Voluptas delectus distinctio architecto aliquid eligendi nostrum odio a culpa modi cumque mollitia id, consequuntur, labore, ut minima
+                illum. Repellendus cumque veniam quae odit enim.
+              </p>
+              <div class="section-title sm">
+                <h4>ROOM SERVICES</h4>
+                <p class="section-subtitle">Single Room Includes</p>
+              </div>
+              <div class="room-services-list">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <ul class="list-unstyled">
                       <li>
-                        <a href="#">
-                          <i class="fa fa-map-marker"></i>Lorem ipsum dolor, 25, Himara</a>
-                      </li>
+                        <i class="fa fa-check"></i>Double Bed</li>
                       <li>
-                        <a href="#">
-                          <i class="fa fa-envelope"></i>contact@hotelhimara.com</a>
-                      </li>
+                        <i class="fa fa-check"></i>80 Sq mt</li>
                       <li>
-                        <a href="#">
-                          <i class="fa fa-phone"></i>+1 888 123 4567</a>
-                      </li>
+                        <i class="fa fa-check"></i>3 Persons</li>
                       <li>
-                        <a href="#">
-                          <i class="fa fa-fax"></i>+1 888 123 4567</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-globe"></i>www.hotelhimara.com</a>
-                      </li>
+                        <i class="fa fa-check"></i>Free Internet</li>
                     </ul>
                   </div>
-                  <div class="social-media mt50">
-                    <a class="facebook" data-original-title="Facebook" data-toggle="tooltip" href="#">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="twitter" data-original-title="Twitter" data-toggle="tooltip" href="#">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                    <a class="googleplus" data-original-title="Google Plus" data-toggle="tooltip" href="#">
-                      <i class="fa fa-google-plus"></i>
-                    </a>
-                    <a class="pinterest" data-original-title="Pinterest" data-toggle="tooltip" href="#">
-                      <i class="fa fa-pinterest"></i>
-                    </a>
-                    <a class="linkedin" data-original-title="Linkedin" data-toggle="tooltip" href="#">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a class="youtube" data-original-title="Youtube" data-toggle="tooltip" href="#">
-                      <i class="fa fa-youtube"></i>
-                    </a>
-                    <a class="tripadvisor" data-original-title="Tripadvisor" data-toggle="tooltip" href="#">
-                      <i class="fa fa-tripadvisor"></i>
-                    </a>
+                  <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-check"></i>Free Wi-Fi</li>
+                      <li>
+                        <i class="fa fa-check"></i>Breakfast Include</li>
+                      <li>
+                        <i class="fa fa-check"></i>Private Balcony</li>
+                      <li class="no">
+                        <i class="fa fa-times"></i>Free Newspaper</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                      <li class="no">
+                        <i class="fa fa-times"></i>Flat Screen Tv</li>
+                      <li>
+                        <i class="fa fa-check"></i>Full Ac</li>
+                      <li class="no">
+                        <i class="fa fa-times"></i>Beach View</li>
+                      <li>
+                        <i class="fa fa-check"></i>Room Service</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
       </main>
@@ -263,19 +300,19 @@
               <div class="inner">
                 <ul class="useful-links">
                   <li>
-                    <a href="about-us.html">About Us</a>
+                    <a href="about-us.php">About Us</a>
                   </li>
                   <li>
-                    <a href="contact.html">Rooms</a>
+                    <a href="contact.php">Rooms</a>
                   </li>
                   <li>
-                    <a href="shop.html">Attractions</a>
+                    <a href="shop.php">Attractions</a>
                   </li>
                   <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="gallery.php">Gallery</a>
                   </li>
                   <li>
-                    <a href="location.html">Our Location</a>
+                    <a href="location.php">Our Location</a>
                   </li>
                 </ul>
               </div>
@@ -338,8 +375,7 @@
     </div>
   </footer>
     </div>
-    <!-- ========== CONTACT NOTIFICATION ========== -->
-    <div id="contact-notification" class="notification fixed"></div>
+    <div class="notification"></div>
     <!-- ========== BACK TO TOP ========== -->
     <div class="back-to-top">
       <i class="fa fa-angle-up" aria-hidden="true"></i>

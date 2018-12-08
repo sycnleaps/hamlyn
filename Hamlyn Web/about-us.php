@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+// require_once("wp_admin_panel/db.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,7 +78,7 @@
       <!-- BRAND -->
       <div class="brand">
         <div class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="images/logo.svg" alt="Hotel Hamlyn">
           </a>
         </div>
@@ -91,26 +96,26 @@
             <a href="#">HOME</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="rooms-list.html">ROOMS</a>
+            <a href="rooms-list.php">ROOMS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="restaurant.html">Our Restaurant</a>
+            <a href="restaurant.php">Our Restaurant</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="location.html">EXCURSIONS</a>
+            <a href="location.php">EXCURSIONS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="gallery.html">GALLERY</a>
+            <a href="gallery.php">GALLERY</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="about-us.html">ABOUT US</a>
+            <a href="about-us.php">ABOUT US</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
           </li>
 
           <li class="menu-item menu-btn">
-            <a href="booking-form.html" class="btn">
+            <a href="booking-form.php" class="btn">
               <i class="fa fa-calendar"></i>
               BOOK ONLINE</a>
           </li>
@@ -118,64 +123,66 @@
       </nav>
     </div>
   </header>
-  <!-- ========== PAGE TITLE ========== -->
-  <div class="page-title gradient-overlay op5" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;
+      <!-- ========== PAGE TITLE ========== -->
+      <div class="page-title gradient-overlay op6" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;
     background-size: cover;">
-    <div class="container">
-      <div class="inner">
-        <h1>Our Restaurant</h1>
-
-        <ol class="breadcrumb">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>Our Restaurant</li>
-        </ol>
+        <div class="container">
+          <div class="inner">
+            <h1>ABOUT US</h1>
+            <ol class="breadcrumb">
+              <li>
+                <a href="index.php">Home</a>
+              </li>
+              <li>About Us</li>
+            </ol>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
       <!-- ========== MAIN ========== -->
-      <main class="restaurant">
+      <main class="contact-page">
         <div class="container">
           <div class="entry">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum commodi incidunt labore unde minima numquam rerum, expedita itaque quibusdam ipsa consequuntur cupiditate, officia iure earum soluta voluptatem impedit pariatur rem! Nulla, error
-              placeat! Animi harum, eveniet placeat excepturi perferendis, ex consectetur explicabo voluptatem totam hic, officiis quisquam? Similique eum itaque, delectus quo deserunt deleniti quibusdam alias sed commodi assumenda magnam unde provident
-              praesentium doloribus a asperiores, amet dolores maiores, illo quis inventore sunt, nihil nemo pariatur! Culpa neque sint accusantium laboriosam reiciendis corporis, veritatis quos, debitis doloremque adipisci repudiandae atque, minus! Atque libero,
-              asperiores ex fugit, quia consequatur modi officiis!
-            </p>
-            <div class="row image-gallery">
-              <!-- ITEM -->
-              <div class="col-md-3">
-                <figure class="gradient-overlay-hover image-icon">
-                  <a href="images/restaurant/restaurant1.jpg">
-                    <img src="images/restaurant/restaurant1.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </figure>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-title">
+                  <h4 class="text-uppercase">HAMLYN BUNGALOW</h4>
+                  <p class="section-subtitle">HIGH QUALITY LUXURY BUNGALOW IN NUWARA ELIYA</p>
+                </div>
+                <div class="info-branding">
+                  <p>Hamlyn Bungalow is located on a peak of a misty hill, surrounded in a fresh vegetable plantation, which is a very quiet peaceful residential area. It has a beautifully landscaped garden as well and scenic beauty from open veranda and bed rooms. Able to feel the tranquility and Peace at this beautiful environment. The slow pace allows you to re-discover and take pleasure from the simple things in life such as the smells of the countryside and just a 8 minutes to Nuwara Eliya Town</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem
+                    assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi
+                    consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+                </div>
               </div>
-              <!-- ITEM -->
-              <div class="col-md-3">
-                <figure class="gradient-overlay-hover image-icon">
-                  <a href="images/restaurant/restaurant2.jpg">
-                    <img src="images/restaurant/restaurant2.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <!-- ITEM -->
-              <div class="col-md-3">
-                <figure class="gradient-overlay-hover image-icon">
-                  <a href="images/restaurant/restaurant3.jpg">
-                    <img src="images/restaurant/restaurant3.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <!-- ITEM -->
-              <div class="col-md-3">
-                <figure class="gradient-overlay-hover image-icon">
-                  <a href="images/restaurant/restaurant4.jpg">
-                    <img src="images/restaurant/restaurant4.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </figure>
+            </div>
+            <h4 class="text-uppercase mt40 mb20">Services</h4>
+            <div class="image-gallery">
+              <div class="row">
+                <!-- ITEM -->
+                <div class="col-md-3">
+                  <figure class="gradient-overlay-hover image-icon">
+                    <a href="images/services/restaurant.jpg"><img src="images/services/restaurant.jpg" alt="Image" class="img-fluid"></a>
+                  </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="col-md-3">
+                  <figure class="gradient-overlay-hover image-icon">
+                    <a href="images/services/cycling.jpg"><img src="images/services/cycling.jpg" alt="Image" class="img-fluid"></a>
+                  </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="col-md-3">
+                  <figure class="gradient-overlay-hover image-icon">
+                    <a href="images/services/tours.jpg"><img src="images/services/tours.jpg" alt="Image" class="img-fluid"></a>
+                  </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="col-md-3">
+                  <figure class="gradient-overlay-hover image-icon">
+                    <a href="images/services/games.jpg"><img src="images/services/games.jpg" alt="Image" class="img-fluid"></a>
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
@@ -217,19 +224,19 @@
               <div class="inner">
                 <ul class="useful-links">
                   <li>
-                    <a href="about-us.html">About Us</a>
+                    <a href="about-us.php">About Us</a>
                   </li>
                   <li>
-                    <a href="contact.html">Rooms</a>
+                    <a href="contact.php">Rooms</a>
                   </li>
                   <li>
-                    <a href="shop.html">Attractions</a>
+                    <a href="shop.php">Attractions</a>
                   </li>
                   <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="gallery.php">Gallery</a>
                   </li>
                   <li>
-                    <a href="location.html">Our Location</a>
+                    <a href="location.php">Our Location</a>
                   </li>
                 </ul>
               </div>

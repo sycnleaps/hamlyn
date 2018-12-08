@@ -34,7 +34,7 @@ if($_POST)
 	}
 }else{
 
-    header('Location: ../404.html');
+    header('Location: ../404.php');
 
 }
 ?>

@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+// require_once("wp_admin_panel/db.php");
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -45,79 +50,9 @@
     <nav id="mobile-menu"></nav>
     <!-- ========== WRAPPER ========== -->
     <div class="wrapper">
-      <!-- ========== TOP MENU ========== -->
-      <div class="topbar">
-        <div class="container">
-          <div class="welcome-mssg">
-            Welcome to Hamlyn Hotel.
-          </div>
-          <div class="top-right-menu">
-            <ul class="top-menu">
-              <li class="d-none d-md-inline">
-                <a href="tel:+18881234567">
-                  <i class="fa fa-phone"></i>+94 772224568
-                </a>
-              </li>
-              <li class="d-none d-md-inline">
-                <a href="mailto:contact@hotelhimara.com">
-                  <i class="fa fa-envelope-o "></i>info@hamlyn.lk</a>
-              </li>
+      
+      <?php include 'header.php';?>
 
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- ========== HEADER ========== -->
-      <header class="horizontal-header sticky-header" data-menutoggle="991">
-        <div class="container">
-          <!-- BRAND -->
-          <div class="brand">
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo.svg" alt="Hotel Hamlyn">
-              </a>
-            </div>
-          </div>
-          <!-- MOBILE MENU BUTTON -->
-          <div id="toggle-menu-button" class="toggle-menu-button">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
-          <!-- MAIN MENU -->
-          <nav id="main-menu" class="main-menu">
-            <ul class="menu">
-              <li class="menu-item dropdown active">
-                <a href="#">HOME</a>
-              </li>
-              <li class="menu-item dropdown">
-                <a href="rooms-list.html">ROOMS</a>
-              </li>
-              <li class="menu-item dropdown">
-                <a href="restaurant.html">Our Restaurant</a>
-              </li>
-              <li class="menu-item dropdown">
-                <a href="location.html">EXCURSIONS</a>
-              </li>
-              <li class="menu-item dropdown">
-                <a href="gallery.html">GALLERY</a>
-              </li>
-              <li class="menu-item dropdown">
-                <a href="about-us.html">ABOUT US</a>
-              </li>
-              <li class="menu-item dropdown">
-                <a href="contact.html">CONTACT US</a>
-              </li>
-
-              <li class="menu-item menu-btn">
-                <a href="booking-form.html" class="btn">
-                  <i class="fa fa-calendar"></i>
-                  BOOK ONLINE</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
       <!-- ========== REVOLUTION SLIDER ========== -->
       <div class="slider">
         <div id="rev-slider-1" class="rev_slider gradient-slider" style="display:none" data-version="5.4.5">
@@ -288,14 +223,14 @@
           <div class="section-title">
             <h4>OUR ROOMS</h4>
             <p class="section-subtitle">Our favorite rooms</p>
-            <a href="rooms-list.html" class="view-all">View all rooms</a>
+            <a href="rooms-list.php" class="view-all">View all rooms</a>
           </div>
           <div class="row">
             <!-- ITEM -->
             <div class="col-md-4">
               <div class="room-grid-item">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html">
+                  <a href="room.php">
                     <img src="images/rooms/deluxe.jpg" class="img-fluid" alt="Image">
                   </a>
                   <div class="room-services">
@@ -307,7 +242,7 @@
                 </figure>
                 <div class="room-info">
                   <h2 class="room-title">
-                    <a href="room.html">Single Room</a>
+                    <a href="room.php">Single Room</a>
                   </h2>
                   <p>Enjoy our single room</p>
                 </div>
@@ -317,7 +252,7 @@
             <div class="col-md-4">
               <div class="room-grid-item">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html">
+                  <a href="room.php">
                     <img src="images/rooms/luxury.jpg" class="img-fluid" alt="Image">
                   </a>
                   <div class="room-services">
@@ -329,7 +264,7 @@
                 </figure>
                 <div class="room-info">
                   <h2 class="room-title">
-                    <a href="room.html">Double Room</a>
+                    <a href="room.php">Double Room</a>
                   </h2>
                   <p>Enjoy our double room</p>
                 </div>
@@ -339,7 +274,7 @@
             <div class="col-md-4">
               <div class="room-grid-item">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html">
+                  <a href="room.php">
                     <img src="images/rooms/double.jpg" class="img-fluid" alt="Image">
                   </a>
                   <div class="room-services">
@@ -352,7 +287,7 @@
                 </figure>
                 <div class="room-info">
                   <h2 class="room-title">
-                    <a href="room.html">Deluxe Room</a>
+                    <a href="room.php">Deluxe Room</a>
                   </h2>
                   <p>Enjoy our delux room</p>
                 </div>
@@ -643,13 +578,13 @@
             <div class="col-md-4">
               <div class="news-grid-item">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="blog-post.html">
+                  <a href="blog-post.php">
                     <img src="images/attractions/horton.jpg" class="img-fluid" alt="Image">
                   </a>
                 </figure>
                 <div class="news-info">
                   <h4 class="title">
-                    <a href="blog-post.html">Horton Plains</a>
+                    <a href="blog-post.php">Horton Plains</a>
                   </h4>
                   <p>This misty grassland plateau is a National Park and UNESCO World Heritage Site...</p>
                 </div>
@@ -659,13 +594,13 @@
             <div class="col-md-4">
               <div class="news-grid-item">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="blog-post.html">
+                  <a href="blog-post.php">
                     <img src="images/attractions/piduruthalagala.jpg" class="img-fluid" alt="Image">
                   </a>
                 </figure>
                 <div class="news-info">
                   <h4 class="title">
-                    <a href="blog-post.html">Piduruthalagala Peak</a>
+                    <a href="blog-post.php">Piduruthalagala Peak</a>
                   </h4>
                   <p>An examination of how the current political and economical climate is affecting the mental healthcare industry...</p>
                 </div>
@@ -675,13 +610,13 @@
             <div class="col-md-4">
               <div class="news-grid-item">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="blog-post.html">
+                  <a href="blog-post.php">
                     <img src="images/attractions/victoria.jpg" class="img-fluid" alt="Image">
                   </a>
                 </figure>
                 <div class="news-info">
                   <h4 class="title">
-                    <a href="blog-post.html">Victoria Park</a>
+                    <a href="blog-post.php">Victoria Park</a>
                   </h4>
                   <p>An examination of how the current political and economical climate is affecting the mental healthcare industry...</p>
                 </div>
@@ -691,116 +626,8 @@
         </div>
       </section>
 
-      <!-- ========== FOOTER ========== -->
-      <footer>
-        <div class="footer-widgets">
-          <div class="container">
-            <div class="row">
-              <!-- WIDGET -->
-              <div class="col-md-3">
-                <div class="footer-widget">
-                  <img src="images/logo.svg" class="footer-logo" alt="Hotel Himara">
-                  <div class="inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, velit placeat assumenda incidunt dolorem aliquam!</p>
-                    <a href="https://www.tripadvisor.com/" target="_blank">
-                      <div class="tripadvisor-banner">
-                        <span class="review">Recommended</span>
-                        <img src="images/icons/tripadvisor.png" alt="Image">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- WIDGET -->
-              <div class="col-md-3">
-                <div class="footer-widget">
-                  <h3>FACEBOOK</h3>
-                  <div class="inner">
+      <?php include 'footer.php';?>
 
-                  </div>
-                </div>
-              </div>
-              <!-- WIDGET -->
-              <div class="col-md-3">
-                <div class="footer-widget">
-                  <h3>USEFUL LINKS</h3>
-                  <div class="inner">
-                    <ul class="useful-links">
-                      <li>
-                        <a href="about-us.html">About Us</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Rooms</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">Attractions</a>
-                      </li>
-                      <li>
-                        <a href="gallery.html">Gallery</a>
-                      </li>
-                      <li>
-                        <a href="location.html">Our Location</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- WIDGET -->
-              <div class="col-md-3">
-                <div class="footer-widget">
-                  <h3>Contact Info</h3>
-                  <div class="inner">
-                    <ul class="contact-details">
-                      <li>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        Lorem ipsum dolor, 25, Hamlyn</li>
-                      <li>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        Phone: +94 7722555662
-                      </li>
-                      <li>
-                        <i class="fa fa-fax"></i>
-                        Fax: +94 12356895</li>
-                      <li>
-                        <i class="fa fa-globe"></i>
-                        Web: www.hamlyn.lk</li>
-                      <li>
-                        <i class="fa fa-envelope"></i>
-                        Email:
-                        <a href="mailto:info@hamlyn.lk">info@hamlyn.lk</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- SUBFOOTER -->
-        <div class="subfooter">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="copyrights">&copy; 2018 Hamlyn Bungalow. Designed by
-                  <a href="https://syncleaps.com/" target="_blank">SyncLeaps</a>.</div>
-              </div>
-              <div class="col-md-6">
-                <div class="social-media">
-                  <a class="facebook" data-original-title="Facebook" data-toggle="tooltip" href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a class="twitter" data-original-title="Twitter" data-toggle="tooltip" href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a class="googleplus" data-original-title="Google Plus" data-toggle="tooltip" href="#">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     <!-- ========== CONTACT NOTIFICATION ========== -->
     <div id="contact-notification" class="notification fixed"></div>

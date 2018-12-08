@@ -2,8 +2,8 @@
 if($_POST)
 {
     // Retrieve the email template required
-    $admin_message = file_get_contents('admin-template.html');
-    $customer_message = file_get_contents('customer-template.html');
+    $admin_message = file_get_contents('admin-template.php');
+    $customer_message = file_get_contents('customer-template.php');
 
     #####################################################################################################
 
@@ -157,6 +157,6 @@ if($_POST)
 
 } else {
 
-   header('Location: ../404.html');
+   header('Location: ../404.php');
 }
 ?>

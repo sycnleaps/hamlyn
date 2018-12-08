@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+// require_once("wp_admin_panel/db.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,7 +78,7 @@
       <!-- BRAND -->
       <div class="brand">
         <div class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="images/logo.svg" alt="Hotel Hamlyn">
           </a>
         </div>
@@ -91,26 +96,26 @@
             <a href="#">HOME</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="rooms-list.html">ROOMS</a>
+            <a href="rooms-list.php">ROOMS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="restaurant.html">Our Restaurant</a>
+            <a href="restaurant.php">Our Restaurant</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="location.html">EXCURSIONS</a>
+            <a href="location.php">EXCURSIONS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="gallery.html">GALLERY</a>
+            <a href="gallery.php">GALLERY</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="about-us.html">ABOUT US</a>
+            <a href="about-us.php">ABOUT US</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
           </li>
 
           <li class="menu-item menu-btn">
-            <a href="booking-form.html" class="btn">
+            <a href="booking-form.php" class="btn">
               <i class="fa fa-calendar"></i>
               BOOK ONLINE</a>
           </li>
@@ -126,7 +131,7 @@
             <h1>ROOMS</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
               </li>
               <li>Rooms</li>
             </ol>
@@ -141,13 +146,13 @@
             <div class="row">
               <div class="col-lg-4">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/double.jpg" class="img-fluid" alt="Image"></a>
+                  <a href="room.php"><img src="images/rooms/double.jpg" class="img-fluid" alt="Image"></a>
                 </figure>
               </div>
               <div class="col-lg-6">
                 <div class="room-info">
                   <h3 class="room-title">
-                    <a href="room.html">SINGLE ROOM</a>
+                    <a href="room.php">SINGLE ROOM</a>
                   </h3>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -163,7 +168,7 @@
               <div class="col-lg-2">
                 <div class="room-price">
                   <span class="price">Rs. 5,000 / night</span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
+                  <a href="room.php" class="btn btn-sm">VIEW DETAILS</a>
                 </div>
               </div>
             </div>
@@ -176,13 +181,13 @@
             <div class="row">
               <div class="col-lg-4">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/deluxe.jpg" class="img-fluid" alt="Image"></a>
+                  <a href="room.php"><img src="images/rooms/deluxe.jpg" class="img-fluid" alt="Image"></a>
                 </figure>
               </div>
               <div class="col-lg-6">
                 <div class="room-info">
                   <h3 class="room-title">
-                    <a href="room.html">DOUBLE ROOM</a>
+                    <a href="room.php">DOUBLE ROOM</a>
                   </h3>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -198,7 +203,7 @@
               <div class="col-lg-2">
                 <div class="room-price">
                   <span class="price">Rs. 5,000 / night</span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
+                  <a href="room.php" class="btn btn-sm">VIEW DETAILS</a>
                 </div>
               </div>
             </div>
@@ -208,13 +213,13 @@
             <div class="row">
               <div class="col-lg-4">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/luxury.jpg" class="img-fluid" alt="Image"></a>
+                  <a href="room.php"><img src="images/rooms/luxury.jpg" class="img-fluid" alt="Image"></a>
                 </figure>
               </div>
               <div class="col-lg-6">
                 <div class="room-info">
                   <h3 class="room-title">
-                    <a href="room.html">DELUXE ROOM</a>
+                    <a href="room.php">DELUXE ROOM</a>
                   </h3>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -230,7 +235,7 @@
               <div class="col-lg-2">
                 <div class="room-price">
                   <span class="price">Rs. 5,000 / night</span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
+                  <a href="room.php" class="btn btn-sm">VIEW DETAILS</a>
                 </div>
               </div>
             </div>
@@ -240,13 +245,13 @@
             <div class="row">
               <div class="col-lg-4">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/family.jpg" class="img-fluid" alt="Image"></a>
+                  <a href="room.php"><img src="images/rooms/family.jpg" class="img-fluid" alt="Image"></a>
                 </figure>
               </div>
               <div class="col-lg-6">
                 <div class="room-info">
                   <h3 class="room-title">
-                    <a href="room.html">FAMILY ROOM</a>
+                    <a href="room.php">FAMILY ROOM</a>
                   </h3>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -262,7 +267,7 @@
               <div class="col-lg-2">
                 <div class="room-price">
                   <span class="price">Rs. 5,000 / night</span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
+                  <a href="room.php" class="btn btn-sm">VIEW DETAILS</a>
                 </div>
               </div>
             </div>
@@ -275,13 +280,13 @@
             <div class="row">
               <div class="col-lg-4">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/luxury.jpg" class="img-fluid" alt="Image"></a>
+                  <a href="room.php"><img src="images/rooms/luxury.jpg" class="img-fluid" alt="Image"></a>
                 </figure>
               </div>
               <div class="col-lg-6">
                 <div class="room-info">
                   <h3 class="room-title">
-                    <a href="room.html">HONEYMOON ROOM</a>
+                    <a href="room.php">HONEYMOON ROOM</a>
                   </h3>
                   <span class="room-rates">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -289,7 +294,7 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
-                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                    <a href="room.php#room-reviews">5.00 Based on 3 Ratings</a>
                   </span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
                   <div class="room-services">
@@ -304,7 +309,7 @@
               <div class="col-lg-2">
                 <div class="room-price">
                   <span class="price">Rs. 5,000 / night</span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
+                  <a href="room.php" class="btn btn-sm">VIEW DETAILS</a>
                 </div>
               </div>
             </div>
@@ -314,13 +319,13 @@
             <div class="row">
               <div class="col-lg-4">
                 <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/deluxe.jpg" class="img-fluid" alt="Image"></a>
+                  <a href="room.php"><img src="images/rooms/deluxe.jpg" class="img-fluid" alt="Image"></a>
                 </figure>
               </div>
               <div class="col-lg-6">
                 <div class="room-info">
                   <h3 class="room-title">
-                    <a href="room.html">ROOM WITH VIEW</a>
+                    <a href="room.php">ROOM WITH VIEW</a>
                   </h3>
                   <span class="room-rates">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -328,7 +333,7 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
-                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                    <a href="room.php#room-reviews">5.00 Based on 3 Ratings</a>
                   </span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
                   <div class="room-services">
@@ -343,7 +348,7 @@
               <div class="col-lg-2">
                 <div class="room-price">
                   <span class="price">Rs. 5,000 / night</span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
+                  <a href="room.php" class="btn btn-sm">VIEW DETAILS</a>
                 </div>
               </div>
             </div>
@@ -378,19 +383,19 @@
                   <div class="inner">
                     <ul class="latest-posts">
                       <li>
-                        <a href="blog-post.html">10 Tips for holiday travel</a>
+                        <a href="blog-post.php">10 Tips for holiday travel</a>
                       </li>
                       <li>
-                        <a href="blog-post.html">Are you ready to enjoy your holidays</a>
+                        <a href="blog-post.php">Are you ready to enjoy your holidays</a>
                       </li>
                       <li>
-                        <a href="blog-post.html">Honeymoon at Hotel Himara</a>
+                        <a href="blog-post.php">Honeymoon at Hotel Himara</a>
                       </li>
                       <li>
-                        <a href="blog-post.html">Travel gift ideas for every type of traveler</a>
+                        <a href="blog-post.php">Travel gift ideas for every type of traveler</a>
                       </li>
                       <li>
-                        <a href="blog-post.html">Breakfast with coffee and orange juice</a>
+                        <a href="blog-post.php">Breakfast with coffee and orange juice</a>
                       </li>
                     </ul>
                   </div>
@@ -403,19 +408,19 @@
                   <div class="inner">
                     <ul class="useful-links">
                       <li>
-                        <a href="about-us.html">About Us</a>
+                        <a href="about-us.php">About Us</a>
                       </li>
                       <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.php">Contact Us</a>
                       </li>
                       <li>
-                        <a href="shop.html">Shop</a>
+                        <a href="shop.php">Shop</a>
                       </li>
                       <li>
-                        <a href="gallery.html">Himara Gallery</a>
+                        <a href="gallery.php">Himara Gallery</a>
                       </li>
                       <li>
-                        <a href="location.html">Our Location</a>
+                        <a href="location.php">Our Location</a>
                       </li>
                     </ul>
                   </div>

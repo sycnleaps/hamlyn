@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+// require_once("wp_admin_panel/db.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,7 +78,7 @@
       <!-- BRAND -->
       <div class="brand">
         <div class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="images/logo.svg" alt="Hotel Hamlyn">
           </a>
         </div>
@@ -91,10 +96,10 @@
             <a href="#">HOME</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="rooms-list.html">ROOMS</a>
+            <a href="rooms-list.php">ROOMS</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="restaurant.html">Our Restaurant</a>
+            <a href="restaurant.php">Our Restaurant</a>
           </li>
           <li class="menu-item dropdown">
             <a href="location.html">EXCURSIONS</a>
@@ -106,7 +111,7 @@
             <a href="about-us.html">ABOUT US</a>
           </li>
           <li class="menu-item dropdown">
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
           </li>
 
           <li class="menu-item menu-btn">
@@ -126,7 +131,7 @@
             <h1>OUR LOCATION</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
               </li>
               <li>Our Location</li>
             </ol>
@@ -178,7 +183,7 @@
                     <a href="about-us.html">About Us</a>
                   </li>
                   <li>
-                    <a href="contact.html">Rooms</a>
+                    <a href="contact.php">Rooms</a>
                   </li>
                   <li>
                     <a href="shop.html">Attractions</a>
