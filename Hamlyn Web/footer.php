@@ -6,7 +6,7 @@
             <!-- WIDGET -->
             <div class="col-md-3">
             <div class="footer-widget">
-                <img src="images/logo.svg" class="footer-logo" alt="Hotel Himara">
+                <img src="images/logo.png" class="footer-logo" alt="Hotel Himara">
                 <div class="inner">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, velit placeat assumenda incidunt dolorem aliquam!</p>
                 <a href="https://www.tripadvisor.com/" target="_blank">
@@ -88,7 +88,7 @@
         <div class="container">
         <div class="row">
             <div class="col-md-6">
-            <div class="copyrights">&copy; 2018 Hamlyn Bungalow. 
+            <div class="copyrights">&copy; 2018 Hamlyn Bungalow. Designed by elysiancrest.
             </div>
             </div>
             <div class="col-md-6">

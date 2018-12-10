@@ -42,7 +42,7 @@ error_reporting(0);
   <div class="loader-inner">
     <div class="spin">
       <span></span>
-      <img src="images/logo.svg" alt="Hotel Hamlyn">
+      <img src="images/logo.png" alt="Hotel Hamlyn">
     </div>
   </div>
 </div>
@@ -488,7 +488,7 @@ error_reporting(0);
           </div>
         </div>
       </main>
-      
+
       <?php include 'footer.php';?>
 
     </div>

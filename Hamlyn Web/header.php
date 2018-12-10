@@ -27,7 +27,7 @@
         <div class="brand">
         <div class="logo">
             <a href="index.php">
-            <img src="images/logo.svg" alt="Hotel Hamlyn">
+            <img src="images/logo.png" alt="Hotel Hamlyn">
             </a>
         </div>
         </div>
