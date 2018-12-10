@@ -88,8 +88,8 @@
         <div class="container">
         <div class="row">
             <div class="col-md-6">
-            <div class="copyrights">&copy; 2018 Hamlyn Bungalow. Designed by
-                <a href="https://syncleaps.com/" target="_blank">SyncLeaps</a>.</div>
+            <div class="copyrights">&copy; 2018 Hamlyn Bungalow. 
+            </div>
             </div>
             <div class="col-md-6">
             <div class="social-media">
